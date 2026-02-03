@@ -1,19 +1,5 @@
-function calculadora(valor1, valor2, operacion) {
-    switch (operacion) {
-        case 'somar':
-            return valor1 + valor2;
-        case 'subtrair':
-            return valor1 - valor2;
-        case 'multiplicar':
-            return valor1 * valor2;
-        case 'dividir':
-            if (valor2 === 0) {
-                return 'Erro: Divisão por zero não é permitida.';
-            }
-            return valor1 / valor2;
-        default:
-            return 'Operação não válida';
-    }
+function calculateNumbers(var1, var2) {
+    console.log("Calculating the sum of", var1, "and", var2);
+    return var1 + var2;
 }
-
-module.exports = calculadora;
+module.exports = { calculateNumbers };  
